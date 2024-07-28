@@ -14,7 +14,7 @@ public static class Program
         while (continuty)
         {
             ShowMenu();
-            Messages.InputMessage("Choise");
+            Messages.InputMessage("Choice");
             string choiceInput = Console.ReadLine();
             int choice;
             bool isSucceeded = int.TryParse(choiceInput, out choice);
@@ -84,12 +84,12 @@ public static class Program
 
     public static void ShowMenu()
     {
-        Console.WriteLine("------MENU------");
+        Console.WriteLine("----MENU----");
         Console.WriteLine("1.All teachers");
         Console.WriteLine("2.Add teacher");
-        Console.WriteLine("3.Delete teacher");
+        Console.WriteLine("3.remove teacher");
         Console.WriteLine("4.Update teacher");
-        Console.WriteLine("5.Details of teacher");
+        Console.WriteLine("5.Details of teachers");
         Console.WriteLine("0.Exit");
     }
 }
